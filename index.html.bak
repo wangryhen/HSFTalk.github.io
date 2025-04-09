@@ -9,7 +9,7 @@
         content="">
   <meta name="keywords" content="Talking head, Audio-driven, Facial disentanglement, EDTalk">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HSFTalk</title>
+  <title>HiSTalk</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script> -->
@@ -111,7 +111,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title"> HSFTalk: Hierarchical Speech Feature-based Landmark Displacements for 3D Talking Head Animation
+          <h1 class="title is-1 publication-title"> HiSTalk: Hierarchical Speech Feature-based Landmark Displacements for 3D Talking Head Animation
           </h1>
 
           <!--div class="is-size-5 publication-authors">
@@ -147,6 +147,8 @@
               </span-->
               
               <span class="link-block">
+                <a href=" "
+=======
                 <a href="https://arxiv.org/abs/2404.01647"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -168,6 +170,8 @@
 
               <!-- Video Link. -->
               <span class="link-block">
+                <a href="./data/HSFTalk.mp4"
+=======
                 <a href="#teaser"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -178,7 +182,7 @@
               </span>
               <!-- Codes Link. -->
               <span class="link-block">
-                <a href="https://github.com/wangryhen/HSFTALK"
+                <a href="https://github.com/wangryhen/HSFTalk_Anonymous"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -230,7 +234,20 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-             Speech-driven 3D facial animation has gained significant attention for its ability to create realistic and expressive facial animations in 3D space 
+            Speech-driven 3D facial animation has gained significant attention for its ability to create realistic and expressive facial animations in 3D space based on speech. 
+            Landmarks can comprehensively and efficiently describe speech-related movements.
+            However, existing methods do not fully exploit the implicit context information of speech, but rather simplify using single-level (i. e., frame-level) speech features to learn landmarks and 
+            then map them into the entire facial animation. 
+            They largely overlooked the relationships between landmarks in distinct temporal regions and different-level speech features (e. g., phonemes, words, and utterances), resulting in over-smoothed 
+            facial movements. In the present work, we propose a novel framework, namely <strong>Hierarchical Speech feature-based 3D Talking head animation (HiSTalk)</strong>, 
+            to explore the correlations between different-level speech features and facial landmarks. 
+            This framework consists of two modules: Hierarchical Speech Features to Sparse landmark displacements (HSF2S) and Sparse landmarks to Dense landmarks (S2D). 
+            Specifically, <strong>HSF2S</strong> is a hierarchical structure-based encoder to establish the correlations between sparse facial landmark displacements and different-level speech features; 
+            then, <strong>S2D</strong> -- a Transformer-based multi-branch fusion decoder -- generates the corresponding dense motion fields based on these sparse landmarks. 
+            Furthermore, HSF2S includes a squeeze and extraction weight generation mechanism to calculate the contributions of different-level speech features to landmarks, 
+            and S2D includes an attention-based fusion operation to synthesize dense facial deformations, which ensures plausible lip synchronization and facial activities. 
+            Extensive qualitative and quantitative experiments and user studies indicate that our method outperforms existing state-of-the-art methods.
+<!--              Speech-driven 3D facial animation has gained significant attention for its ability to create realistic and expressive facial animations in 3D space 
              based on speech. Landmarks can comprehensively and efficiently describe speech-related movements. However, existing methods do not fully exploit the 
              implicit context information of speech, but rather simplify using single-level (i. e., frame-level) speech features to learn landmarks and then map 
              them into the entire facial animation. They largely overlooked the relationships between landmarks in distinct temporal regions and different-level 
@@ -241,7 +258,7 @@
              correlations between sparse facial landmark displacements and different-level speech features, and then S2D, a transformer-based decoder, generates the corresponding 
              dense motion fields based on these sparse landmarks. Furthermore, HSF2S includes a weighted generation mechanism to calculate the contributions of different-level 
              speech features to landmarks, which ensures plausible lip synchronization and facial activities. Extensive qualitative and quantitative experiments 
-             as well as user studies indicate that our method outperforms existing state-of-the-art methods.
+             as well as user studies indicate that our method outperforms existing state-of-the-art methods. -->
             <br>
             <br>
           </p>
@@ -254,7 +271,7 @@
           <img src="./data/framework.png" alt="synctalk" width="600" ></center>
           <p>
             <br>
-            Given a speech signal as input, our framework HSFTalk can generate realistic 3D talking heads through the Hierarchical Speech Features to Sparse Landmarks (HSF2S) 
+            Given a speech signal as input, our framework HiSTalk can generate realistic 3D talking heads through the Hierarchical Speech Features to Sparse Landmarks (HSF2S) 
             module and the Sparse Landmarks to Dense Landmarks Displacements (S2D) module.
           </p>
 
@@ -277,7 +294,7 @@
           <center><img src="./data/pipeline.png" alt="synctalk" width="600" ></center>
           <p>
             <br>
-            Pipeline of our proposed HSFTalk. HSFTalk, learning the correlations between HSF and facial landmarks, receives a raw audio 𝐴 as input and generates a sequence of 
+            Pipeline of our proposed HiSTalk. HiSTalk, learning the correlations between HSF and facial landmarks, receives a raw audio 𝐴 as input and generates a sequence of 
             3D facial animation from sparse to dense landmark displacements. The Acoustic Feature Extractor is Wav2Vec 2.0, and the Hierarchical Feature Extractor follows the 
             SpeechFormer++ block. The weighted generation mechanism calculates the contribution of frame-level, phoneme-level, word-level, and utterance-level speech features 
             to landmark displacements. Then S2D uses a Transformer-based decoder to generate the dense landmark displacement sequences for rendering the animation.
@@ -308,11 +325,11 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{2024hsftalk,
-  title={HSFTalk: Hierarchical Speech Feature-based Landmark Displacements for 3D Talking Head Animation},
+    <pre><code>@article{2025hsftalk,
+  title={HiSTalk: Hierarchical Speech Feature-based Landmark Displacements for 3D Talking Head Animation},
   author={},
   journal={arXiv preprint arXiv:2404.01647},
-  year={2024}
+  year={2025}
 }</code></pre>
   </div>
 </section>
@@ -326,7 +343,7 @@
           <a class="icon-link" href="https://arxiv.org/abs/2404.01647">
               <i class="fas fa-file-pdf"></i> <span>Paper</span>
           </a>
-          <a class="icon-link" href="https://github.com/tanshuai0219/EDTalk" class="external-link" disabled>
+          <a class="icon-link" href="https://github.com/wangryhen/HSFTalk_Anonymous" class="external-link" disabled>
               <i class="fab fa-github"></i> <span>Code</span>
           </a>
       </div>
