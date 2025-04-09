@@ -1,9 +1,9 @@
-# HSFTalk: Hierarchical Speech Feature-based Landmark Displacements for 3D Talking Head Animation
-The official repository of the paper [HSFTalk: Hierarchical Speech Feature-based Landmark Displacements for 3D Talking Head Animation](https://arxiv.org/abs/2404.01647)
+# HiSTalk: Hierarchical Speech Feature-based Landmark Displacements for 3D Talking Head Animation
+The official repository of the paper [HiSTalk: Hierarchical Speech Feature-based Landmark Displacements for 3D Talking Head Animation](https://arxiv.org/abs/2404.01647)
 
 <p align='center'>
   <b>
-    <a href="https://arxiv.org/abs/2404.01647">Paper</a>
+    <a href="">Paper</a>
     | 
     <a href="https://wangryhen.github.io/HSFTalk.github.io/">Project Page</a>
     |
@@ -60,7 +60,7 @@ The README.md template is borrowed from [EDTalk](https://github.com/tanshuai0219
 
 Thanks for these great projects.
 =======
->>>>>>> b086eb2 (update)
+>>>>>>> (update)
 # Nerfies
 
 This is the repository that contains source code for the [Nerfies website](https://nerfies.github.io).
