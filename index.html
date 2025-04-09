@@ -234,7 +234,20 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-             Speech-driven 3D facial animation has gained significant attention for its ability to create realistic and expressive facial animations in 3D space 
+            Speech-driven 3D facial animation has gained significant attention for its ability to create realistic and expressive facial animations in 3D space based on speech. 
+            Landmarks can comprehensively and efficiently describe speech-related movements.
+            However, existing methods do not fully exploit the implicit context information of speech, but rather simplify using single-level (i. e., frame-level) speech features to learn landmarks and 
+            then map them into the entire facial animation. 
+            They largely overlooked the relationships between landmarks in distinct temporal regions and different-level speech features (e. g., phonemes, words, and utterances), resulting in over-smoothed 
+            facial movements. In the present work, we propose a novel framework, namely <strong>Hierarchical Speech feature-based 3D Talking head animation (HiSTalk)</strong>, 
+            to explore the correlations between different-level speech features and facial landmarks. 
+            This framework consists of two modules: Hierarchical Speech Features to Sparse landmark displacements (HSF2S) and Sparse landmarks to Dense landmarks (S2D). 
+            Specifically, <strong>HSF2S</strong> is a hierarchical structure-based encoder to establish the correlations between sparse facial landmark displacements and different-level speech features; 
+            then, <strong>S2D</strong> -- a Transformer-based multi-branch fusion decoder -- generates the corresponding dense motion fields based on these sparse landmarks. 
+            Furthermore, HSF2S includes a squeeze and extraction weight generation mechanism to calculate the contributions of different-level speech features to landmarks, 
+            and S2D includes an attention-based fusion operation to synthesize dense facial deformations, which ensures plausible lip synchronization and facial activities. 
+            Extensive qualitative and quantitative experiments and user studies indicate that our method outperforms existing state-of-the-art methods.
+<!--              Speech-driven 3D facial animation has gained significant attention for its ability to create realistic and expressive facial animations in 3D space 
              based on speech. Landmarks can comprehensively and efficiently describe speech-related movements. However, existing methods do not fully exploit the 
              implicit context information of speech, but rather simplify using single-level (i. e., frame-level) speech features to learn landmarks and then map 
              them into the entire facial animation. They largely overlooked the relationships between landmarks in distinct temporal regions and different-level 
@@ -245,7 +258,7 @@
              correlations between sparse facial landmark displacements and different-level speech features, and then S2D, a transformer-based decoder, generates the corresponding 
              dense motion fields based on these sparse landmarks. Furthermore, HSF2S includes a weighted generation mechanism to calculate the contributions of different-level 
              speech features to landmarks, which ensures plausible lip synchronization and facial activities. Extensive qualitative and quantitative experiments 
-             as well as user studies indicate that our method outperforms existing state-of-the-art methods.
+             as well as user studies indicate that our method outperforms existing state-of-the-art methods. -->
             <br>
             <br>
           </p>
