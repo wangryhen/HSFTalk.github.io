@@ -17,7 +17,7 @@ The official repository of the paper [HiSTalk: Hierarchical Speech Feature-based
     <img src='/paper_images/framework.svg' width='1000'/>
   </p>
 
-Given a speech signal as input, our framework <strong>HSFTalk</strong> can generate realistic 3D talking heads through the Hierarchical Speech Features to Sparse Landmarks (<stromng>HSF2S</strong>) module and the Sparse Landmarks to Dense Landmarks Displacements (<strong>S2D</strong>) module.
+Given a speech signal as input, our framework <strong>HiSTalk</strong> can generate realistic 3D talking heads through the Hierarchical Speech Features to Sparse Landmarks (<stromng>HSF2S</strong>) module and the Sparse Landmarks to Dense Landmarks Displacements (<strong>S2D</strong>) module.
 
 
 
