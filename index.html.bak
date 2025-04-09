@@ -325,7 +325,7 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{2025hsftalk,
+    <pre><code>@article{2025histalk,
   title={HiSTalk: Hierarchical Speech Feature-based Landmark Displacements for 3D Talking Head Animation},
   author={},
   journal={arXiv preprint arXiv:2404.01647},
